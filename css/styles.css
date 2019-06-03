@@ -1,0 +1,124 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+}
+h1 {
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+}
+.slideshow {
+  width: 80%;
+  height: 70vh;
+  margin: 3rem auto;
+
+  overflow: hidden;
+  box-sizing: border-box;
+
+  margin-top: 4rem;
+}
+.ss1 .circle {
+  position: relative;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 2px 2px #222;
+  border-radius: 50%;
+}
+.left {
+  left: 3%;
+  top: 55%;
+}
+.right {
+  left: 92%;
+  top: 43%;
+}
+.circle i {
+  color: #222;
+  transform: scale(2, 2);
+}
+.slider {
+  width: 100%;
+  height: 100%;
+  margin-top: -100px;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+}
+.s1 {
+  background-image: url(/images/pic1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.s2 {
+  background-image: url(/images/pic2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.s3 {
+  background-image: url(/images/pic3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.s4 {
+  background-image: url(/images/pic4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider.auto {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  animation: slideshow 30s infinite;
+  background-color: #fff;
+}
+@keyframes slideshow {
+  0% {
+    background-image: url(/images/pic5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  20% {
+    background-image: url(/images/pic6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  40% {
+    background-image: url(/images/pic7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  60% {
+    background-image: url(/images/pic8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  80% {
+    background-image: url(/images/pic9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  100% {
+    background-image: url(/images/pic5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
